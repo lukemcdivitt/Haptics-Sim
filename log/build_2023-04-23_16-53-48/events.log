@@ -1,0 +1,97 @@
+[0.000000] (-) TimerEvent: {}
+[0.000662] (webots_pkg) JobQueued: {'identifier': 'webots_pkg', 'dependencies': OrderedDict()}
+[0.000732] (webots_pkg) JobStarted: {'identifier': 'webots_pkg'}
+[0.099162] (-) TimerEvent: {}
+[0.199671] (-) TimerEvent: {}
+[0.300059] (-) TimerEvent: {}
+[0.400629] (-) TimerEvent: {}
+[0.500948] (-) TimerEvent: {}
+[0.601257] (-) TimerEvent: {}
+[0.701575] (-) TimerEvent: {}
+[0.739894] (webots_pkg) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/webots_pkg', 'build', '--build-base', '/home/luke/Haptics-Sim/build/webots_pkg/build', 'install', '--record', '/home/luke/Haptics-Sim/build/webots_pkg/install.log', '--single-version-externally-managed'], 'cwd': '/home/luke/Haptics-Sim/src/webots_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'luke', 'SSH_AGENT_PID': '1552', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/luke', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1378', 'DBUS_STARTER_BUS_TYPE': 'session', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=c32bbf7c6b3cdc0a3cb46f9c64418667', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'luke', 'JOURNAL_STREAM': '8:42948', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'luke', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/home/luke/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/luke-Latitude-E7470:@/tmp/.ICE-unix/1590,unix/luke-Latitude-E7470:/tmp/.ICE-unix/1590', 'INVOCATION_ID': '7446b579c3f8493b85523c29cc1e39a5', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e345f9e4_113a_4bc3_860f_55de5a2380d9', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.9459', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/luke/Haptics-Sim/build/webots_pkg', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=c32bbf7c6b3cdc0a3cb46f9c64418667', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/luke/Haptics-Sim/build/webots_pkg/prefix_override:/home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[0.801725] (-) TimerEvent: {}
+[0.902109] (-) TimerEvent: {}
+[0.985653] (webots_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[0.986439] (webots_pkg) StdoutLine: {'line': b'creating ../../build/webots_pkg/webots_pkg.egg-info\n'}
+[0.986750] (webots_pkg) StdoutLine: {'line': b'writing ../../build/webots_pkg/webots_pkg.egg-info/PKG-INFO\n'}
+[0.987075] (webots_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/webots_pkg/webots_pkg.egg-info/dependency_links.txt\n'}
+[0.987234] (webots_pkg) StdoutLine: {'line': b'writing entry points to ../../build/webots_pkg/webots_pkg.egg-info/entry_points.txt\n'}
+[0.987401] (webots_pkg) StdoutLine: {'line': b'writing requirements to ../../build/webots_pkg/webots_pkg.egg-info/requires.txt\n'}
+[0.987554] (webots_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/webots_pkg/webots_pkg.egg-info/top_level.txt\n'}
+[0.989080] (webots_pkg) StdoutLine: {'line': b"writing manifest file '../../build/webots_pkg/webots_pkg.egg-info/SOURCES.txt'\n"}
+[1.002232] (-) TimerEvent: {}
+[1.022972] (webots_pkg) StdoutLine: {'line': b"reading manifest file '../../build/webots_pkg/webots_pkg.egg-info/SOURCES.txt'\n"}
+[1.023867] (webots_pkg) StdoutLine: {'line': b"writing manifest file '../../build/webots_pkg/webots_pkg.egg-info/SOURCES.txt'\n"}
+[1.024071] (webots_pkg) StdoutLine: {'line': b'running build\n'}
+[1.024162] (webots_pkg) StdoutLine: {'line': b'running build_py\n'}
+[1.024279] (webots_pkg) StdoutLine: {'line': b'creating /home/luke/Haptics-Sim/build/webots_pkg/build\n'}
+[1.024456] (webots_pkg) StdoutLine: {'line': b'creating /home/luke/Haptics-Sim/build/webots_pkg/build/lib\n'}
+[1.024623] (webots_pkg) StdoutLine: {'line': b'creating /home/luke/Haptics-Sim/build/webots_pkg/build/lib/webots_pkg\n'}
+[1.024747] (webots_pkg) StdoutLine: {'line': b'copying webots_pkg/potential_field_node.py -> /home/luke/Haptics-Sim/build/webots_pkg/build/lib/webots_pkg\n'}
+[1.024924] (webots_pkg) StdoutLine: {'line': b'copying webots_pkg/simple_mapper.py -> /home/luke/Haptics-Sim/build/webots_pkg/build/lib/webots_pkg\n'}
+[1.025097] (webots_pkg) StdoutLine: {'line': b'copying webots_pkg/crazyflie_publisher.py -> /home/luke/Haptics-Sim/build/webots_pkg/build/lib/webots_pkg\n'}
+[1.025178] (webots_pkg) StdoutLine: {'line': b'copying webots_pkg/__init__.py -> /home/luke/Haptics-Sim/build/webots_pkg/build/lib/webots_pkg\n'}
+[1.025316] (webots_pkg) StdoutLine: {'line': b'copying webots_pkg/crazyflie_controller.py -> /home/luke/Haptics-Sim/build/webots_pkg/build/lib/webots_pkg\n'}
+[1.025444] (webots_pkg) StdoutLine: {'line': b'copying webots_pkg/turtlebot_mapper_node.py -> /home/luke/Haptics-Sim/build/webots_pkg/build/lib/webots_pkg\n'}
+[1.025558] (webots_pkg) StdoutLine: {'line': b'copying webots_pkg/crazyflie_webots_driver.py -> /home/luke/Haptics-Sim/build/webots_pkg/build/lib/webots_pkg\n'}
+[1.025676] (webots_pkg) StdoutLine: {'line': b'copying webots_pkg/my_turtlebot_driver.py -> /home/luke/Haptics-Sim/build/webots_pkg/build/lib/webots_pkg\n'}
+[1.026044] (webots_pkg) StdoutLine: {'line': b'running install\n'}
+[1.027161] (webots_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[1.028797] (webots_pkg) StdoutLine: {'line': b'creating /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg\n'}
+[1.029252] (webots_pkg) StdoutLine: {'line': b'copying /home/luke/Haptics-Sim/build/webots_pkg/build/lib/webots_pkg/potential_field_node.py -> /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg\n'}
+[1.029403] (webots_pkg) StdoutLine: {'line': b'copying /home/luke/Haptics-Sim/build/webots_pkg/build/lib/webots_pkg/simple_mapper.py -> /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg\n'}
+[1.029531] (webots_pkg) StdoutLine: {'line': b'copying /home/luke/Haptics-Sim/build/webots_pkg/build/lib/webots_pkg/crazyflie_publisher.py -> /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg\n'}
+[1.029768] (webots_pkg) StdoutLine: {'line': b'copying /home/luke/Haptics-Sim/build/webots_pkg/build/lib/webots_pkg/__init__.py -> /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg\n'}
+[1.030245] (webots_pkg) StdoutLine: {'line': b'copying /home/luke/Haptics-Sim/build/webots_pkg/build/lib/webots_pkg/crazyflie_controller.py -> /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg\n'}
+[1.030400] (webots_pkg) StdoutLine: {'line': b'copying /home/luke/Haptics-Sim/build/webots_pkg/build/lib/webots_pkg/turtlebot_mapper_node.py -> /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg\n'}
+[1.030527] (webots_pkg) StdoutLine: {'line': b'copying /home/luke/Haptics-Sim/build/webots_pkg/build/lib/webots_pkg/crazyflie_webots_driver.py -> /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg\n'}
+[1.030673] (webots_pkg) StdoutLine: {'line': b'copying /home/luke/Haptics-Sim/build/webots_pkg/build/lib/webots_pkg/my_turtlebot_driver.py -> /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg\n'}
+[1.030910] (webots_pkg) StdoutLine: {'line': b'byte-compiling /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg/potential_field_node.py to potential_field_node.cpython-38.pyc\n'}
+[1.034321] (webots_pkg) StdoutLine: {'line': b'byte-compiling /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg/simple_mapper.py to simple_mapper.cpython-38.pyc\n'}
+[1.035857] (webots_pkg) StdoutLine: {'line': b'byte-compiling /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg/crazyflie_publisher.py to crazyflie_publisher.cpython-38.pyc\n'}
+[1.037907] (webots_pkg) StdoutLine: {'line': b'byte-compiling /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg/__init__.py to __init__.cpython-38.pyc\n'}
+[1.038107] (webots_pkg) StdoutLine: {'line': b'byte-compiling /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg/crazyflie_controller.py to crazyflie_controller.cpython-38.pyc\n'}
+[1.040348] (webots_pkg) StdoutLine: {'line': b'byte-compiling /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg/turtlebot_mapper_node.py to turtlebot_mapper_node.cpython-38.pyc\n'}
+[1.041211] (webots_pkg) StdoutLine: {'line': b'byte-compiling /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg/crazyflie_webots_driver.py to crazyflie_webots_driver.cpython-38.pyc\n'}
+[1.042799] (webots_pkg) StdoutLine: {'line': b'byte-compiling /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg/my_turtlebot_driver.py to my_turtlebot_driver.cpython-38.pyc\n'}
+[1.043756] (webots_pkg) StdoutLine: {'line': b'running install_data\n'}
+[1.044521] (webots_pkg) StdoutLine: {'line': b'copying package.xml -> /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg\n'}
+[1.044905] (webots_pkg) StdoutLine: {'line': b'creating /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/resource\n'}
+[1.045123] (webots_pkg) StdoutLine: {'line': b'copying resource/crazyflie.urdf -> /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/resource/\n'}
+[1.045363] (webots_pkg) StdoutLine: {'line': b'copying resource/__init__.py -> /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/resource/\n'}
+[1.045634] (webots_pkg) StdoutLine: {'line': b'copying resource/webots_pkg -> /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/resource/\n'}
+[1.045823] (webots_pkg) StdoutLine: {'line': b'copying resource/swarm_classes.py -> /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/resource/\n'}
+[1.046035] (webots_pkg) StdoutLine: {'line': b'copying resource/turtlebot.urdf -> /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/resource/\n'}
+[1.046218] (webots_pkg) StdoutLine: {'line': b'creating /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/resource/__pycache__\n'}
+[1.046426] (webots_pkg) StdoutLine: {'line': b'copying resource/__pycache__/swarm_classes.cpython-38.pyc -> /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/resource/__pycache__\n'}
+[1.046665] (webots_pkg) StdoutLine: {'line': b'copying resource/__pycache__/__init__.cpython-38.pyc -> /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/resource/__pycache__\n'}
+[1.046846] (webots_pkg) StdoutLine: {'line': b'creating /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/launch\n'}
+[1.047007] (webots_pkg) StdoutLine: {'line': b'copying launch/swarm_launch.py -> /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/launch/\n'}
+[1.047197] (webots_pkg) StdoutLine: {'line': b'creating /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/worlds\n'}
+[1.047340] (webots_pkg) StdoutLine: {'line': b'copying worlds/crazyflie.wbt -> /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/worlds/\n'}
+[1.047536] (webots_pkg) StdoutLine: {'line': b'copying worlds/crazyflie_apartment.wbt -> /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/worlds/\n'}
+[1.047711] (webots_pkg) StdoutLine: {'line': b'copying worlds/turtlebot_apartment.wbt -> /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/worlds/\n'}
+[1.047882] (webots_pkg) StdoutLine: {'line': b'copying worlds/swarm_apartment.wbt -> /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/worlds/\n'}
+[1.048108] (webots_pkg) StdoutLine: {'line': b'creating /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/worlds/meshes\n'}
+[1.048311] (webots_pkg) StdoutLine: {'line': b'copying worlds/meshes/cf_body.stl -> /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/worlds/meshes\n'}
+[1.048525] (webots_pkg) StdoutLine: {'line': b'copying worlds/meshes/4_motors.stl -> /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/worlds/meshes\n'}
+[1.048691] (webots_pkg) StdoutLine: {'line': b'copying worlds/meshes/cw_prop.stl -> /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/worlds/meshes\n'}
+[1.048827] (webots_pkg) StdoutLine: {'line': b'copying worlds/meshes/2_pinheaders.stl -> /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/worlds/meshes\n'}
+[1.049067] (webots_pkg) StdoutLine: {'line': b'copying worlds/meshes/battery.stl -> /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/worlds/meshes\n'}
+[1.049280] (webots_pkg) StdoutLine: {'line': b'copying worlds/meshes/ccw_prop.stl -> /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/worlds/meshes\n'}
+[1.049428] (webots_pkg) StdoutLine: {'line': b'copying worlds/meshes/cf2_assembly.stl -> /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/worlds/meshes\n'}
+[1.049546] (webots_pkg) StdoutLine: {'line': b'copying worlds/meshes/battery_holder.stl -> /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/worlds/meshes\n'}
+[1.049671] (webots_pkg) StdoutLine: {'line': b'copying worlds/meshes/4_motormounts.stl -> /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/worlds/meshes\n'}
+[1.049793] (webots_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.051577] (webots_pkg) StdoutLine: {'line': b'Copying ../../build/webots_pkg/webots_pkg.egg-info to /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg-0.0.0-py3.8.egg-info\n'}
+[1.052748] (webots_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[1.071124] (webots_pkg) StdoutLine: {'line': b'Installing cf_supervisor script to /home/luke/Haptics-Sim/install/webots_pkg/lib/webots_pkg\n'}
+[1.071355] (webots_pkg) StdoutLine: {'line': b'Installing crazyflie_controller script to /home/luke/Haptics-Sim/install/webots_pkg/lib/webots_pkg\n'}
+[1.071497] (webots_pkg) StdoutLine: {'line': b'Installing potential_field script to /home/luke/Haptics-Sim/install/webots_pkg/lib/webots_pkg\n'}
+[1.071688] (webots_pkg) StdoutLine: {'line': b'Installing simple_mapper script to /home/luke/Haptics-Sim/install/webots_pkg/lib/webots_pkg\n'}
+[1.071804] (webots_pkg) StdoutLine: {'line': b'Installing webots_pkg_driver script to /home/luke/Haptics-Sim/install/webots_pkg/lib/webots_pkg\n'}
+[1.072226] (webots_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/luke/Haptics-Sim/build/webots_pkg/install.log'\n"}
+[1.096217] (webots_pkg) CommandEnded: {'returncode': 0}
+[1.102457] (-) TimerEvent: {}
+[1.120242] (webots_pkg) JobEnded: {'identifier': 'webots_pkg', 'rc': 0}
+[1.121341] (-) EventReactorShutdown: {}

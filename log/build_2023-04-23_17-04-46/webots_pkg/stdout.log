@@ -1,0 +1,26 @@
+running egg_info
+writing ../../build/webots_pkg/webots_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/webots_pkg/webots_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/webots_pkg/webots_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/webots_pkg/webots_pkg.egg-info/requires.txt
+writing top-level names to ../../build/webots_pkg/webots_pkg.egg-info/top_level.txt
+reading manifest file '../../build/webots_pkg/webots_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/webots_pkg/webots_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying launch/swarm_launch.py -> /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/launch/
+copying worlds/crazyflie_apartment.wbt -> /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/worlds/
+copying worlds/swarm_apartment.wbt -> /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/worlds/
+running install_egg_info
+removing '/home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/webots_pkg/webots_pkg.egg-info to /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg-0.0.0-py3.8.egg-info
+running install_scripts
+Installing cf_supervisor script to /home/luke/Haptics-Sim/install/webots_pkg/lib/webots_pkg
+Installing crazyflie_controller script to /home/luke/Haptics-Sim/install/webots_pkg/lib/webots_pkg
+Installing potential_field script to /home/luke/Haptics-Sim/install/webots_pkg/lib/webots_pkg
+Installing simple_mapper script to /home/luke/Haptics-Sim/install/webots_pkg/lib/webots_pkg
+Installing webots_pkg_driver script to /home/luke/Haptics-Sim/install/webots_pkg/lib/webots_pkg
+writing list of installed files to '/home/luke/Haptics-Sim/build/webots_pkg/install.log'
