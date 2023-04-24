@@ -1,0 +1,31 @@
+[0.802s] Invoking command in '/home/luke/Haptics-Sim/src/webots_pkg': PYTHONPATH=/home/luke/Haptics-Sim/build/webots_pkg/prefix_override:/home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/webots_pkg build --build-base /home/luke/Haptics-Sim/build/webots_pkg/build install --record /home/luke/Haptics-Sim/build/webots_pkg/install.log --single-version-externally-managed
+[1.048s] running egg_info
+[1.049s] writing ../../build/webots_pkg/webots_pkg.egg-info/PKG-INFO
+[1.049s] writing dependency_links to ../../build/webots_pkg/webots_pkg.egg-info/dependency_links.txt
+[1.049s] writing entry points to ../../build/webots_pkg/webots_pkg.egg-info/entry_points.txt
+[1.050s] writing requirements to ../../build/webots_pkg/webots_pkg.egg-info/requires.txt
+[1.050s] writing top-level names to ../../build/webots_pkg/webots_pkg.egg-info/top_level.txt
+[1.084s] reading manifest file '../../build/webots_pkg/webots_pkg.egg-info/SOURCES.txt'
+[1.085s] writing manifest file '../../build/webots_pkg/webots_pkg.egg-info/SOURCES.txt'
+[1.085s] running build
+[1.086s] running build_py
+[1.086s] copying webots_pkg/crazyflie_follower_right.py -> /home/luke/Haptics-Sim/build/webots_pkg/build/lib/webots_pkg
+[1.086s] running install
+[1.087s] running install_lib
+[1.089s] copying /home/luke/Haptics-Sim/build/webots_pkg/build/lib/webots_pkg/crazyflie_follower_right.py -> /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg
+[1.089s] byte-compiling /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg/crazyflie_follower_right.py to crazyflie_follower_right.cpython-38.pyc
+[1.092s] running install_data
+[1.093s] running install_egg_info
+[1.095s] removing '/home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg-0.0.0-py3.8.egg-info' (and everything under it)
+[1.096s] Copying ../../build/webots_pkg/webots_pkg.egg-info to /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg-0.0.0-py3.8.egg-info
+[1.096s] running install_scripts
+[1.113s] Installing cf_supervisor script to /home/luke/Haptics-Sim/install/webots_pkg/lib/webots_pkg
+[1.113s] Installing crazyflie_controller script to /home/luke/Haptics-Sim/install/webots_pkg/lib/webots_pkg
+[1.114s] Installing crazyflie_follower_left script to /home/luke/Haptics-Sim/install/webots_pkg/lib/webots_pkg
+[1.114s] Installing crazyflie_follower_right script to /home/luke/Haptics-Sim/install/webots_pkg/lib/webots_pkg
+[1.114s] Installing crazyflie_leader script to /home/luke/Haptics-Sim/install/webots_pkg/lib/webots_pkg
+[1.114s] Installing potential_field script to /home/luke/Haptics-Sim/install/webots_pkg/lib/webots_pkg
+[1.114s] Installing simple_mapper script to /home/luke/Haptics-Sim/install/webots_pkg/lib/webots_pkg
+[1.115s] Installing webots_pkg_driver script to /home/luke/Haptics-Sim/install/webots_pkg/lib/webots_pkg
+[1.115s] writing list of installed files to '/home/luke/Haptics-Sim/build/webots_pkg/install.log'
+[1.140s] Invoked command in '/home/luke/Haptics-Sim/src/webots_pkg' returned '0': PYTHONPATH=/home/luke/Haptics-Sim/build/webots_pkg/prefix_override:/home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/webots_pkg build --build-base /home/luke/Haptics-Sim/build/webots_pkg/build install --record /home/luke/Haptics-Sim/build/webots_pkg/install.log --single-version-externally-managed

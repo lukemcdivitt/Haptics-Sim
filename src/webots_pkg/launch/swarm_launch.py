@@ -91,7 +91,7 @@ def generate_launch_description():
      # THIS is for the robot_driver (unnecessary for webots_pkg)
     ros2_supervisor = Ros2SupervisorLauncher()
     webots = WebotsLauncher(
-        world=os.path.join(package_dir, 'worlds', 'swarm_apartment.wbt')
+        world=os.path.join(package_dir, 'worlds', 'large_square.wbt')
     )
     launch_description = [webots]
     

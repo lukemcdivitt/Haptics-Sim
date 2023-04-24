@@ -21,6 +21,9 @@ test/test_flake8.py
 test/test_pep257.py
 webots_pkg/__init__.py
 webots_pkg/crazyflie_controller.py
+webots_pkg/crazyflie_follower_left.py
+webots_pkg/crazyflie_follower_right.py
+webots_pkg/crazyflie_leader.py
 webots_pkg/crazyflie_publisher.py
 webots_pkg/crazyflie_webots_driver.py
 webots_pkg/my_turtlebot_driver.py
@@ -29,6 +32,7 @@ webots_pkg/simple_mapper.py
 webots_pkg/turtlebot_mapper_node.py
 worlds/crazyflie.wbt
 worlds/crazyflie_apartment.wbt
+worlds/large_square.wbt
 worlds/swarm_apartment.wbt
 worlds/turtlebot_apartment.wbt
 worlds/meshes/2_pinheaders.stl
