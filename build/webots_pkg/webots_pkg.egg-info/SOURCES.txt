@@ -34,6 +34,7 @@ worlds/crazyflie.wbt
 worlds/crazyflie_apartment.wbt
 worlds/large_square.wbt
 worlds/swarm_apartment.wbt
+worlds/test_env.wbt
 worlds/turtlebot_apartment.wbt
 worlds/meshes/2_pinheaders.stl
 worlds/meshes/4_motormounts.stl
