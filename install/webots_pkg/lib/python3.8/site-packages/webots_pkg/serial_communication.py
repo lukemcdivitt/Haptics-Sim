@@ -49,7 +49,7 @@ class SerialCommunicationNode(Node):
         # 6 - right back 
         # 7 - right right
 
-        self.func = interp1d([0,350],[0,8])
+        self.func = interp1d([0,350],[1,8])
 
         self.get_logger().info("Serial Communication Running")
 
