@@ -28,9 +28,9 @@ class CrazyflieLeaderNode(Node):
         self.odom_subscriber_ = self.create_subscription(
             Odometry, "/cf1/odom", self.odom_callback, 10)
         self.range_front_subscriber_ = self.create_subscription(
-            Range, '/cf1/range_front', self.front_range_callback, 10)
+            Range, '/cf1/range_left', self.front_range_callback, 10)
         self.range_back_subscriber_ = self.create_subscription(
-            Range, '/cf1/range_back', self.back_range_callback, 10)
+            Range, '/cf1/range_right', self.back_range_callback, 10)
         self.range_vals_subscriber_left_ = self.create_subscription(
             Float64MultiArray, '/cf2/range_val', self.record_left_range, 10)
         self.range_vals_subscriber_right_ = self.create_subscription(
@@ -114,6 +114,7 @@ class CrazyflieLeaderNode(Node):
     def front_range_callback(self, range: Range):
 
         self.front = range.range
+        print(range.range)
     
     def back_range_callback(self, range: Range):
 
@@ -134,15 +135,17 @@ class CrazyflieLeaderNode(Node):
 
         data = [self.front, self.back, 
                 left_vals[0], left_vals[1], left_vals[2], 
-                right_vals[0], right_vals[1], right_vals[2]]
+                right_vals[2], right_vals[1], right_vals[0]]
         
+        for idx,val in enumerate(data):
+            if np.abs(val) > 0.6:
+                data[idx] = 0.6
+
         msg = Float64MultiArray()
         msg.data = data
         self.range_val_publisher_.publish(msg)
 
     def cmd_callback(self, msg: Float64MultiArray):
-
-        print(msg.data)
 
         if np.abs(msg.data[0]) < 0.1:
             self.y_cmd = 0.0

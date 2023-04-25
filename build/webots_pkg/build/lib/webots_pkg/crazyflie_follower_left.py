@@ -32,15 +32,15 @@ class CrazyflieFollowerLeftNode(Node):
         self.cmd_vel_subscriber_lead_ = self.create_subscription(
             Twist, '/cf1/cmd_vel', self.cmd_vel_callback, 10)
         self.range_front_subscriber_ = self.create_subscription(
-            Range, '/cf2/range_front', self.front_range_callback, 10)
+            Range, '/cf2/range_left', self.front_range_callback, 10)
         self.range_back_subscriber_ = self.create_subscription(
-            Range, '/cf2/range_back', self.back_range_callback, 10)
+            Range, '/cf2/range_right', self.back_range_callback, 10)
         self.range_left_subscriber_ = self.create_subscription(
-            Range, '/cf2/range_left', self.left_range_callback, 10)
+            Range, '/cf2/range_front', self.left_range_callback, 10)
         self.range_array_publisher_ = self.create_publisher(
             Float64MultiArray, '/cf2/range_val', 10)
         self.offset_subscriber_ = self.create_subscription(
-        64, '/offset', self.offset_callback, 10)
+        Float64, '/offset', self.offset_callback, 10)
         self.timer = self.create_timer(0.1, self.publish_to_range_topic)
         self.get_logger().info("Crazyflie follwer left has been created")
 
@@ -167,6 +167,9 @@ class CrazyflieFollowerLeftNode(Node):
         # send the coords of the point to track out
         self.follow_x = err_transform[0] + self.leader_x
         self.follow_y = err_transform[1] + self.leader_y
+
+        # self.follow_x = self.leader_x + self.offset_x
+        # self.follow_y = self.leader_y
 
         # print for debug
         # self.get_logger().info("x: " + str(self.follow_x))

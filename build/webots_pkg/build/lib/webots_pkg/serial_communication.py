@@ -16,7 +16,7 @@ from sensor_msgs.msg import LaserScan
 from nav_msgs.msg import Odometry, OccupancyGrid
 from geometry_msgs.msg import Twist
 from visualization_msgs.msg import MarkerArray, Marker
-from std_msgs.msg import Float64MultiArray, Float32MultiArray
+from std_msgs.msg import Float64MultiArray, Float32MultiArray, Float64
 import serial
 from scipy.interpolate import interp1d
 
@@ -39,7 +39,7 @@ class SerialCommunicationNode(Node):
         # 1 - y cmd
         # 2 - spacing cmd
 
-        self.data_to_controller_array = [1, 1, 1, 1, 1, 1, 1, 1] # now in cm
+        self.data_to_controller_array = [4, 4, 4, 4, 4, 4, 4, 4] # now in cm
         # 0  - leader front
         # 1 - leader back
         # 2 - left front
@@ -49,7 +49,7 @@ class SerialCommunicationNode(Node):
         # 6 - right back 
         # 7 - right right
 
-        self.func = interp1d([0,350],[1,8])
+        self.func = interp1d([0,60],[1,8])
 
         self.get_logger().info("Serial Communication Running")
 
@@ -79,6 +79,7 @@ class SerialCommunicationNode(Node):
                 cmds_unpack_roll = 0.0
                 cmds_unpack_pitch = 0.0
                 cmds_offset = 0.0
+                offset_cmd = 0.1
                 read_fail = False
                 break
             pass
@@ -100,12 +101,17 @@ class SerialCommunicationNode(Node):
             # self.get_logger().info(str(cmds_unpack_pitch[0]))
             # self.get_logger().info(str(cmds_unpack_offset[0]))
 
-            data_new = [cmds_unpack_roll, cmds_unpack_pitch[0], cmds_unpack_offset[0]]
+            offset_cmd = cmds_unpack_offset[0]
+
+            data_new = [cmds_unpack_roll, cmds_unpack_pitch[0], offset_cmd]
         else:
             data_new = [0.0, 0.0, 0.0]
 
         msg = Float64MultiArray()
         msg.data = data_new
+
+        offset_msg = Float64()
+        offset_msg.data = offset_cmd
 
         self.cmds_publisher_.publish(msg)
 

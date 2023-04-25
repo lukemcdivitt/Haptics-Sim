@@ -33,11 +33,11 @@ class CrazyflieFollowerRightNode(Node):
         self.cmd_vel_subscriber_lead_ = self.create_subscription(
             Twist, '/cf1/cmd_vel', self.cmd_vel_callback, 10)
         self.range_front_subscriber_ = self.create_subscription(
-            Range, '/cf3/range_front', self.front_range_callback, 10)
+            Range, '/cf3/range_left', self.front_range_callback, 10)
         self.range_back_subscriber_ = self.create_subscription(
-            Range, '/cf3/range_back', self.back_range_callback, 10)
+            Range, '/cf3/range_right', self.back_range_callback, 10)
         self.range_right_subscriber_ = self.create_subscription(
-            Range, '/cf3/range_left', self.right_range_callback, 10)
+            Range, '/cf3/range_back', self.right_range_callback, 10)
         self.range_array_publisher_ = self.create_publisher(
             Float64MultiArray, '/cf3/range_val', 10)
         self.offset_subscriber_ = self.create_subscription(
@@ -74,7 +74,7 @@ class CrazyflieFollowerRightNode(Node):
         self.leader_yaw = 0.0
 
         # follow variables
-        self.offset_x = -0.1
+        self.offset_x = 0.1
         self.offset_y = 0.0
         self.follow_x = 0.0
         self.follow_y = 0.0
@@ -158,13 +158,17 @@ class CrazyflieFollowerRightNode(Node):
                               -np.sin(self.leader_yaw), np.cos(self.leader_yaw), 0, 
                               0, 0, 1])
         rot_matrix = rot_array.reshape((3,3))
-        state_array = np.array([self.offset_x, self.offset_y, 0.0])
+        state_array = np.array([-self.offset_x, self.offset_y, 0.0])
         state_matrix = state_array.reshape((3,1))
         err_transform = np.linalg.inv(np.matrix(rot_matrix)) @ state_matrix
 
         # send the coords of the point to track out
         self.follow_x = err_transform[0] + self.leader_x
         self.follow_y = err_transform[1] + self.leader_y
+
+        # self.follow_x = self.leader_x - self.offset_x
+        # self.follow_y = self.leader_y 
+
 
         # print for debug
         # self.get_logger().info("x: " + str(self.follow_x))
