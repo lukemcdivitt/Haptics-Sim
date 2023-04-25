@@ -1,0 +1,56 @@
+[0.873s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/luke/Haptics-Sim']
+[0.874s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], base_paths=['/home/luke/Haptics-Sim'], build_base='build', ignore_user_meta=False, log_base=None, log_level=None, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7f9832df4460>>, metas=['./colcon.meta'], names_only=False, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, paths=None, paths_only=True, topological_graph=False, topological_graph_density=False, topological_graph_dot=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, topological_graph_legend=False, topological_order=False, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7f9832df4460>, verb_name='list', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f9832d81340>)
+[0.935s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.935s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.935s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.935s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.935s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.936s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/luke/Haptics-Sim'
+[0.936s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim) by extensions ['ignore', 'ignore_ament_install']
+[0.936s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim) by extension 'ignore'
+[0.936s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim) by extension 'ignore_ament_install'
+[0.936s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim) by extensions ['colcon_pkg']
+[0.936s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim) by extension 'colcon_pkg'
+[0.936s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim) by extensions ['colcon_meta']
+[0.936s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim) by extension 'colcon_meta'
+[0.937s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim) by extensions ['ros']
+[0.937s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim) by extension 'ros'
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim) by extensions ['cmake', 'python']
+[0.974s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim) by extension 'cmake'
+[0.974s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim) by extension 'python'
+[0.974s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim) by extensions ['python_setup_py']
+[0.974s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim) by extension 'python_setup_py'
+[0.974s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/build) by extensions ['ignore', 'ignore_ament_install']
+[0.974s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/build) by extension 'ignore'
+[0.974s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/build) ignored
+[0.975s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/install) by extensions ['ignore', 'ignore_ament_install']
+[0.975s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/install) by extension 'ignore'
+[0.975s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/install) ignored
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/log) by extensions ['ignore', 'ignore_ament_install']
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/log) by extension 'ignore'
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/log) ignored
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/src) by extensions ['ignore', 'ignore_ament_install']
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/src) by extension 'ignore'
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/src) by extension 'ignore_ament_install'
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/src) by extensions ['colcon_pkg']
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/src) by extension 'colcon_pkg'
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/src) by extensions ['colcon_meta']
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/src) by extension 'colcon_meta'
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/src) by extensions ['ros']
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/src) by extension 'ros'
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/src) by extensions ['cmake', 'python']
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/src) by extension 'cmake'
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/src) by extension 'python'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/src) by extensions ['python_setup_py']
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/src) by extension 'python_setup_py'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/src/webots_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/src/webots_pkg) by extension 'ignore'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/src/webots_pkg) by extension 'ignore_ament_install'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/src/webots_pkg) by extensions ['colcon_pkg']
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/src/webots_pkg) by extension 'colcon_pkg'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/src/webots_pkg) by extensions ['colcon_meta']
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/src/webots_pkg) by extension 'colcon_meta'
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/src/webots_pkg) by extensions ['ros']
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(/home/luke/Haptics-Sim/src/webots_pkg) by extension 'ros'
+[0.986s] DEBUG:colcon.colcon_core.package_identification:Package '/home/luke/Haptics-Sim/src/webots_pkg' with type 'ros.ament_python' and name 'webots_pkg'
+[0.986s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

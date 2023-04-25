@@ -9,6 +9,7 @@
 /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg/crazyflie_webots_driver.py
 /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg/my_turtlebot_driver.py
 /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg/crazyflie_follower_right.py
+/home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg/serial_communication.py
 /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg/__pycache__/potential_field_node.cpython-38.pyc
 /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg/__pycache__/simple_mapper.cpython-38.pyc
 /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg/__pycache__/crazyflie_leader.cpython-38.pyc
@@ -20,6 +21,7 @@
 /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg/__pycache__/crazyflie_webots_driver.cpython-38.pyc
 /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg/__pycache__/my_turtlebot_driver.cpython-38.pyc
 /home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg/__pycache__/crazyflie_follower_right.cpython-38.pyc
+/home/luke/Haptics-Sim/install/webots_pkg/lib/python3.8/site-packages/webots_pkg/__pycache__/serial_communication.cpython-38.pyc
 /home/luke/Haptics-Sim/install/webots_pkg/share/ament_index/resource_index/packages/webots_pkg
 /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/package.xml
 /home/luke/Haptics-Sim/install/webots_pkg/share/webots_pkg/resource/crazyflie.urdf
@@ -58,5 +60,6 @@
 /home/luke/Haptics-Sim/install/webots_pkg/lib/webots_pkg/crazyflie_follower_right
 /home/luke/Haptics-Sim/install/webots_pkg/lib/webots_pkg/crazyflie_leader
 /home/luke/Haptics-Sim/install/webots_pkg/lib/webots_pkg/potential_field
+/home/luke/Haptics-Sim/install/webots_pkg/lib/webots_pkg/serial_communication
 /home/luke/Haptics-Sim/install/webots_pkg/lib/webots_pkg/simple_mapper
 /home/luke/Haptics-Sim/install/webots_pkg/lib/webots_pkg/webots_pkg_driver

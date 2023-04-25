@@ -14,13 +14,13 @@ from sensor_msgs.msg import LaserScan
 from nav_msgs.msg import Odometry, OccupancyGrid
 from geometry_msgs.msg import Twist
 from visualization_msgs.msg import MarkerArray, Marker
-from std_msgs.msg import Float64MultiArray
+from std_msgs.msg import Float64MultiArray, Float64, Float32
 
 import numpy as np
 
 # Change this path to your crazyflie-firmware folder
 # Change this path to your crazyflie-firmware folder
-class CrazyflieControllerNode(Node):
+class CrazyflieFollowerRightNode(Node):
 
     def __init__(self):
         super().__init__("crazyflie_follower_right")
@@ -40,8 +40,10 @@ class CrazyflieControllerNode(Node):
             Range, '/cf3/range_left', self.right_range_callback, 10)
         self.range_array_publisher_ = self.create_publisher(
             Float64MultiArray, '/cf3/range_val', 10)
+        self.offset_subscriber_ = self.create_subscription(
+            Float64, '/offset', self.offset_callback, 10)
         self.timer = self.create_timer(0.1, self.publish_to_range_topic)
-        self.get_logger().info("Crazyflie Leader has been created")
+        self.get_logger().info("Crazyflie follower right has been created")
 
         # controller variables
         self.x = 0.0
@@ -219,8 +221,12 @@ class CrazyflieControllerNode(Node):
         msg.data = [self.front, self.back, self.right]
         self.range_array_publisher_.publish(msg)
 
+    def offset_callback(self, msg: Float64):
+
+        self.offset_x = msg.data
+
 def main(args=None):
     rclpy.init(args=args)
-    node = CrazyflieControllerNode()
+    node = CrazyflieFollowerRightNode()
     rclpy.spin(node)
     rclpy.shutdown()

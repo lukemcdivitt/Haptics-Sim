@@ -50,6 +50,7 @@ setup(
             'crazyflie_follower_left = webots_pkg.crazyflie_follower_left:main',
             'crazyflie_follower_right = webots_pkg.crazyflie_follower_right:main',
             'crazyflie_leader = webots_pkg.crazyflie_leader:main',
+            'serial_communication = webots_pkg.serial_communication:main',
         ],
     },
 )

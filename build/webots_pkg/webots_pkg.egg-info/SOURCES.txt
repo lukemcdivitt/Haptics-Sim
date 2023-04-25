@@ -28,6 +28,7 @@ webots_pkg/crazyflie_publisher.py
 webots_pkg/crazyflie_webots_driver.py
 webots_pkg/my_turtlebot_driver.py
 webots_pkg/potential_field_node.py
+webots_pkg/serial_communication.py
 webots_pkg/simple_mapper.py
 webots_pkg/turtlebot_mapper_node.py
 worlds/crazyflie.wbt
